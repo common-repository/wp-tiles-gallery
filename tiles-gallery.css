@@ -1,0 +1,102 @@
+/* showcase start*/
+
+#showcase h4 {
+  color: #fff;
+  font-family: 'Open Sans', 'Sans Serif', arial;
+  font-size: 18px;
+}
+
+#showcase p {
+  font-family: 'Open Sans', 'Sans Serif', arial;
+  font-weight: 200;
+  color: #7c7c7c;
+  text-align: center;
+}
+
+#showcase > p {
+  margin-bottom: 40px;
+}
+
+#showcase img {max-width: 100%;}
+
+.gallery {
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+.gallery .item {
+  float: left;
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+}
+
+.gallery-col-4 .item {
+  width: 25%;
+}
+
+.gallery-col-3 .item {
+  width: 33.3333333333%;
+}
+
+.gallery-col-2 .item {
+  width: 50%;
+}
+
+.gallery .overlay {
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  vertical-align: middle;
+  transition: opacity 400ms;
+  padding: 3%;
+  border-radius: 0;
+}
+
+.overlay h4 {
+  font-family: 'Ubuntu', sans-serif;
+  position: relative;
+  top: -20px;
+  transition: all 400ms;
+  color: #A0A0A0;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin: 19px 0 22px;
+}
+
+.overlay p {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  position: relative;
+  bottom: -50px;
+  transition: all 400ms;
+  color: #A0A0A0;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.gallery .item:hover .overlay {
+  opacity: 1;
+  transition: opacity 400ms;
+  border-radius: 0;
+}
+
+.item:hover h4 {
+  top: 0;
+  opacity: 1;
+}
+
+.item:hover p {
+  bottom: 0;
+}
+
+/*showcase end*/
